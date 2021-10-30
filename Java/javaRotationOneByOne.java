@@ -28,4 +28,8 @@ public class Main
 		rot.printArr(arr, 7);
 	}
 }
+/* This algorithm has :
+ * Time complexity : O(n * d)
+ * Auxiliary Space : O(1)
+ */
 
