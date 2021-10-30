@@ -1,23 +1,21 @@
-/******************************************************************************
-
-                            Online Java Compiler.
-                Code, Compile, Run and Debug java program online.
-Write your code in this editor and press "Run" button to execute it.
-
-*******************************************************************************/
-
 public class Main
 {
     public void leftRotate(int arr[], int d, int n){
-        for(int i=0;i<d;i++){
+        for(int i=0;i<d;i++)
             rotateLeftByOne(arr, n);
-        }
+	/* Explanation :
+	 * Looping for d times to call rotateLeftByOne with 2 parameters (arr, n)
+	 */
     }
     public void rotateLeftByOne(int arr[], int n){
         int temp = arr[0];
         for(int i=0;i<n-1;i++)
             arr[i] = arr[i+1];
         arr[n-1] = temp;
+	//this algorithm works like rotate first value into the last array value. so, when leftRotate function is looping to call rotateLeftByOne, array of leftRotate will be rotate from first index into last index
+	/* Explanation :
+	 * Looping for n times and move from arr[index+1] to arr[index]. then, add temp value into arr[n-1]
+	 */
     }
     public void printArr(int arr[], int n){
         for(int i=0;i<n;i++)
