@@ -38,6 +38,25 @@ public class Main
         if(temp == null) return; // if temp == null then return nothing (stop the procedure)
         prev.next = temp.next; // next of prev = next of temp
     }
+    void deleteNodeBasedOnPosition(int position){
+        if(head == null){ // if Node head is null, then return (stop procedure)
+            return;
+        }
+        Node temp = head; // init Node temp as head
+        if(position == 0){ // if position is 0, then head = next of temp and return nothing (stop procedure)
+            head = temp.next;
+            return;
+        }
+        int i = 0;
+        while(i < position && temp.next != null){ // while i is less than position and next of temp is not null
+            i++; // then move i
+            if(i == position) break; // if i equals position, then break
+            temp = temp.next; // move temp
+        }
+        if(temp == null || temp.next == null) return; // if temp is null and next of temp is null, then return (stop position)
+        Node Next = temp.next.next; // init Node next as the next of next temp
+        temp.next = Next; // init temp.next as Next
+    }
     void printList(){
         Node n = head; //init n as head
         while(n != null){ //while n is not null, then print data from n class (node class).
@@ -57,6 +76,7 @@ public class Main
 	    linkedlist.append(50); //insert data from last Node
 		linkedlist.append(60);
 		linkedlist.deleteNode(2); // delete data with "2" element
+		linkedlist.deleteNodeBasedOnPosition(2); // Delete node based on input position
 		linkedlist.printList();
 	}
 }
