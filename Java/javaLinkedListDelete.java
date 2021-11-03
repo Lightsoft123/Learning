@@ -57,6 +57,9 @@ public class Main
         Node Next = temp.next.next; // init Node next as the next of next temp
         temp.next = Next; // init temp.next as Next
     }
+    void deleteLinkedList(){
+        head = null;
+    }
     void printList(){
         Node n = head; //init n as head
         while(n != null){ //while n is not null, then print data from n class (node class).
@@ -78,6 +81,8 @@ public class Main
 		linkedlist.deleteNode(2); // delete data with "2" element
 		linkedlist.deleteNodeBasedOnPosition(2); // Delete node based on input position
 		linkedlist.printList();
+		linkedlist.deleteLinkedList();
+		if(linkedlist.head == null) System.out.println("Linked List deleted");
 	}
 }
 
