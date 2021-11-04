@@ -1,0 +1,88 @@
+English to Indonesia
+
+A
+
+Alter -> ubah, mengubah, tukar
+Altered -> diubah
+(Alter is similar to change)
+
+
+B
+
+C
+
+Contiguous -> berdekatan, berdampingan, berbatasan, yang bersentuhan
+
+
+
+D
+
+E
+
+F
+
+G
+
+
+H
+
+I
+
+J
+
+K
+
+
+L
+
+M
+
+N
+
+O
+
+Over -> berlebihan, lebih, di atas, terlampau
+Overwrite/Overwriting -> menimpa
+(Example : Overwriting other data)
+
+
+
+P
+
+Q
+
+R
+
+Runtime -> waktu berjalan
+(runtime is usually used for programming words, example : Runtime error)
+
+
+S
+
+Store -> toko, menyimpan
+Stored -> disimpan, tersimpan
+(Store with verb version is similar to "save")
+Scatter/scattered -> berserakan, tersebar, bertaburan, beracakan
+
+
+T
+
+U
+
+V
+
+W
+
+X
+
+Y
+
+Z
+
+
+Some of senctences that hard to translate :
+However, in a linked list, each node points to the next one such that data can exist at scattered (non-contiguous) addresses
+-> Bagaimanapun, dalam sebuah linked list, setiap titik node berikutnya bisa merupakan data yang sudah ada pada alamat secara berserakan.
+
+this allows for a dynamic size that can change at runtime.
+-> (linked list) ini diijinkan untuk sebuah ukuran dinamik yang bisa diubah pada runtime
